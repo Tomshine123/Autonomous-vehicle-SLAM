@@ -9,7 +9,7 @@ This repository is my implementation for ME5413 Autonomous Mobile Robotics Final
 
 ## Dependencies
 The requirement can be found in https://github.com/NUS-Advanced-Robotics-Centre/ME5413_Final_Project and also an extra ros package
-  * `pcl_ros` is used for generate pcl file from rostopic
+  * `pcl_ros` is used for generating pcl file from rostopic
 ## Installation
 This repo is a ros workspace, containing several rospkgs:
 * `ALOAM` is SLAM algorithm package used for 3D mapping
