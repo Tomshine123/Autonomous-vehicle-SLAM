@@ -99,4 +99,4 @@ If you have any questions please feel free to open a pull-request
 
 ## License
 
-The [My_Project](https://github.com/Tomshine123/My_project) is released under the [MIT License](https://github.com/Tomshine123/My_project)
+The [My_Project](https://github.com/Tomshine123/My_project) is released under the [MIT License](https://github.com/Tomshine123/My_project/blob/main/LICENSE)
