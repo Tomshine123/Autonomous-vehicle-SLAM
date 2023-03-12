@@ -14,7 +14,7 @@ The requirement can be found in https://github.com/NUS-Advanced-Robotics-Centre/
 ## Installation
 This repo is a ros workspace, containing several rospkgs:
 * `ALOAM` is SLAM algorithm package used for 3D mapping
-* `costmap_prohibition_layer` provides a quick way to add virtual obstacle in costmap to set prohibited region
+* `costmap_prohibition_layer` provides a plugin to add virtual obstacle in costmap to set prohibited region
 * `interactive_tools` are customized tools to interact with gazebo and your robot
 * `jackal_description` contains the modified jackal robot model descriptions
 * `jackal_navigation` contains a probabilistic localization system for navigation
@@ -64,8 +64,20 @@ After transforming you can obtain the global map by 3D Lidar SLAM like below and
 
 ![map](src/me5413_world/media/map.png)
 ### 2. Navigation
-Close all terminals and start a new world
+To begin with adding prohibited region in the map, create `prohibition_areas.yaml` in `My_project/src/jackal_navigation/params/map_nav_params/` and add the following content to the file
 ```bash
+prohibition_areas:
+
+# define an obstacle line
+ - [[4.5, 1.5],
+    [4.5, 5.0]]
+
+ - [[1.0, 1.0],
+    [3.0, 1.0]]
+```
+Close all terminals and start new one in the workspace
+```bash
+source develop/setup.bash
 roslaunch me5413_world world.launch
 ```
 In the second terminal launch the navigation node
