@@ -93,7 +93,7 @@ roslaunch me5413_world navigation.launch
 Click the buttons of the bottom right panel in rviz and navigation to the specified pose
 ![navigation](src/me5413_world/media/navigation.png)
 
-## Contribution
+## Support
 
 If you have any questions please feel free to open a pull-request
 
