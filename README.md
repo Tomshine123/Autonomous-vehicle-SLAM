@@ -9,10 +9,13 @@ This repository is my implementation for ME5413 Autonomous Mobile Robotics Final
 ![GitHub Repo stars](https://img.shields.io/github/stars/Tomshine123/My_project?color=FFE333)
 
 ## Dependencies
-The requirement can be found in https://github.com/Tomshine123/ME5413_Final_Project/blob/main/README.md
-  * `pcl_ros` for generate pcl file from rosbag
+The requirement can be found in https://github.com/NUS-Advanced-Robotics-Centre/ME5413_Final_Project and also an extra ros package
+  * `pcl_ros` is used for generate pcl file from rosbag
 ## Installation
 This repo is a ros workspace, containing several rospkgs:
+* `ALOAM' is SLAM algorithm package used for 3D mapping
+* `costmap_prohibition_layer` provides a quick way to add virtual obstacle in costmap to set prohibited region
 * `interactive_tools` are customized tools to interact with gazebo and your robot
 * `jackal_description` contains the modified jackal robot model descriptions
+* `jackal_navigation` contains a probabilistic localization system for navigation
 * `me5413_world` the main pkg containing the gazebo world, and the launch files
