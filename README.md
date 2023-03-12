@@ -79,8 +79,8 @@ prohibition_areas:
 
 # define  an obstacle region
 #- [[-11.15, -15.614],
-    [-12.35, -13.89],
-    [-10.05, -12.218]]
+#   [-12.35, -13.89],
+#   [-10.05, -12.218]]
 ```
 Close all terminals and start new one in the workspace
 ```bash
@@ -91,4 +91,5 @@ In the second terminal launch the navigation node
 ```bash
 roslaunch me5413_world navigation.launch
 ```
+Click the buttons in the bottom right panel and navigation to the specified pose
 ![navigation](src/me5413_world/media/navigation.png)
