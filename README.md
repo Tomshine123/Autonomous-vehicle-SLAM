@@ -68,6 +68,7 @@ Then build the workspace again and run the rosnode
 ```bash
 cd ~/My_project
 catkin_make
+rosrun pcd2pgm pcd2topic
 ```
 And run map saver in another terminal
 ```
