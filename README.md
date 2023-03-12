@@ -60,4 +60,4 @@ private_nh.param("file_directory", file_directory, std::string("/home/tommy/pcd/
 ```
 private_nh.param("file_name", file_name, std::string("12673.944000000")); # the name of the pcd file
 ```
-After transforming you can obtain the global map by 3D Lidar SLAM
+After transforming you can obtain the global map by 3D Lidar SLAM like below
