@@ -103,6 +103,7 @@ roslaunch me5413_world world.launch
 ```
 In the second terminal launch the navigation node
 ```bash
+source develop/setup.bash
 roslaunch me5413_world navigation.launch
 ```
 Click the buttons of the bottom right panel in rviz and navigation to the specified pose
