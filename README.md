@@ -68,12 +68,19 @@ To begin with adding prohibited region in the map, create `prohibition_areas.yam
 ```bash
 prohibition_areas:
 
-# define an obstacle line
+# define an obstacle point
+# - [17.09, -6.388]
+ 
+# define  an obstacle line
  - [[4.5, 1.5],
     [4.5, 5.0]]
-
  - [[1.0, 1.0],
     [3.0, 1.0]]
+
+# define  an obstacle region
+#- [[-11.15, -15.614],
+    [-12.35, -13.89],
+    [-10.05, -12.218]]
 ```
 Close all terminals and start new one in the workspace
 ```bash
