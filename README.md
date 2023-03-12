@@ -43,6 +43,7 @@ roslaunch me5413_world world.launch
 ```
 In the second terminal, launch A-LOAM SLAM for 3D Lidar
 ```
+source devel/setup.bash
 roslaunch aloam_velodyne aloam_velodyne_VLP_16.launch 
 ```
 In order to drive the robot around for mapping, launch keyboard control node in the third terminal
