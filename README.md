@@ -45,6 +45,6 @@ roslaunch me5413_world world.launch
 roslaunch aloam_velodyne aloam_velodyne_VLP_16.launch 
 # In order to drive the robot around for mapping, launch keyboard control node in the third terminal
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py 
-```![Screenshot from 2023-03-12 19-54-24](https://user-images.githubusercontent.com/92678944/224543024-77b55e06-b35e-4305-ac9e-8ee2f377bdec.png)
+```
+By above you can visualize pointclouds, and finish mapping by exploring all possible areas
 
-By above you can visualize pointcloud, and finish mapping by exploring all possible areas
