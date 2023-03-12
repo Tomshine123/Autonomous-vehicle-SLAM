@@ -48,7 +48,16 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 By above you can visualize pointclouds, and finish mapping by exploring all possible areas
 ![pointcloud](src/me5413_world/media/pointcloud.png)
-To save the pointcloud in a pcl file, run rosnode in `pcl_ros` package
+To save the pointclouds in a pcl file, run rosnode in `pcl_ros` package to generate file in current direction
 ```
 rosrun pcl_ros pointcloud_to_pcd input:=/laser_cloud_surround
-```bash
+```
+![pc_map](src/me5413_world/media/pc_map.png)
+To convert the pcl file to pgm format, run rosnode in `pcd2pgm` package after modify the path in `test.cpp`
+```
+private_nh.param("file_directory", file_directory, std::string("/home/tommy/pcd/")); # the path to pcd file
+```
+```
+private_nh.param("file_name", file_name, std::string("12673.944000000")); # the name of the pcd file
+```
+After transforming you can obtain the global map by 3D Lidar SLAM
