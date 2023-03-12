@@ -64,6 +64,15 @@ private_nh.param("file_directory", file_directory, std::string("/home/tommy/pcd/
 ```
 private_nh.param("file_name", file_name, std::string("12673.944000000")); # the name of the pcd file
 ```
+Then build the workspace again and run the rosnode
+```bash
+cd ~/My_project
+catkin_make
+```
+And run map saver in another terminal
+```
+rosrun map_server map_saver
+```
 After transforming you can obtain the global map by 3D Lidar SLAM like below and also a corresponding .yaml file and put them into `src/me5413_world/maps/`
 
 ![map](src/me5413_world/media/map.png)
