@@ -47,4 +47,8 @@ roslaunch aloam_velodyne aloam_velodyne_VLP_16.launch
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py 
 ```
 By above you can visualize pointclouds, and finish mapping by exploring all possible areas
-
+![pointcloud](src/me5413_world/media/pointcloud.png)
+To save the pointcloud in a pcl file, run rosnode in `pcl_ros` package
+```
+rosrun pcl_ros pointcloud_to_pcd input:=/laser_cloud_surround
+```bash
