@@ -40,9 +40,13 @@ Following commands will launch the gazebo with the project world and also A-LOAM
 ```bash
 # Launch Gazebo World together with our robot
 roslaunch me5413_world world.launch
-# In the second terminal, launch A-LOAM SLAM for 3D Lidar
+```
+In the second terminal, launch A-LOAM SLAM for 3D Lidar
+```
 roslaunch aloam_velodyne aloam_velodyne_VLP_16.launch 
-# In order to drive the robot around for mapping, launch keyboard control node in the third terminal
+```
+In order to drive the robot around for mapping, launch keyboard control node in the third terminal
+```
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py 
 ```
 By above you can visualize pointclouds, and finish mapping by exploring all possible areas
