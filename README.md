@@ -74,7 +74,7 @@ And run map saver in another terminal
 ```
 rosrun map_server map_saver
 ```
-After transforming you can obtain the global map by 3D Lidar SLAM like below and also a corresponding .yaml file and put them into `src/me5413_world/maps/`
+After transforming you can obtain the global map by 3D Lidar SLAM like below and also a corresponding .yaml file， rename both as my_map and put them into `src/me5413_world/maps/`
 
 ![map](src/me5413_world/media/map.png)
 ### 2. Navigation
