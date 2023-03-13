@@ -36,7 +36,7 @@ source devel/setup.bash
 To properly load the gazebo world, you will need to have the necessary model files in the `~/.gazebo/models/` directory, which installation instructions can be found in URL above.
 ## Usage
 ### 1. Mapping
-Following commands will launch the gazebo with the project world and also A-LOAM SLAM for 3D Lidar
+Following commands will launch the gazebo with the project world
 ```bash
 # Launch Gazebo World together with our robot
 roslaunch me5413_world world.launch
