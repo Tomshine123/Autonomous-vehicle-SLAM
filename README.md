@@ -1,5 +1,5 @@
-# My_project
-This repository is my implementation for ME5413 Autonomous Mobile Robotics Final Project
+# final_project
+This repository is the implementation for ME5413 Autonomous Mobile Robotics Final Project
 >Created by Group 12
 
 ![Ubuntu 20.04](https://img.shields.io/badge/OS-Ubuntu_20.04-informational?style=flat&logo=ubuntu&logoColor=white&color=2bbc8a)
@@ -78,7 +78,7 @@ After transforming you can obtain the global map by 3D Lidar SLAM like below and
 
 ![map](src/me5413_world/media/map.png)
 ### 2. Navigation
-To begin with adding prohibited region in the map, create `prohibition_areas.yaml` in `My_project/src/jackal_navigation/params/map_nav_params/` and add the following content to the file
+To begin with adding prohibited region in the map, find `prohibition_areas.yaml` in `My_project/src/jackal_navigation/params/map_nav_params/` and modify the following content in the file to the desired one
 ```bash
 prohibition_areas:
 
