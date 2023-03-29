@@ -96,7 +96,7 @@ prohibition_areas:
 #   [-12.35, -13.89],
 #   [-10.05, -12.218]]
 ```
-After that, also add following lines to `move_base.launch` in `jackal_navigation` package,
+After that, also check if following lines in `move_base.launch` in `jackal_navigation` package,
 ```
 <rosparam file="$(find jackal_navigation)/params/map_nav_params/prohibition_areas.yaml" command="load" ns="global_costmap/costmap_prohibition_layer" />
 <rosparam file="$(find jackal_navigation)/params/map_nav_params/prohibition_areas.yaml" command="load" ns="local_costmap/costmap_prohibition_layer" />
